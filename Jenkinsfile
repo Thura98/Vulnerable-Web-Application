@@ -10,9 +10,9 @@ pipeline {
         stage('Code Quality Check via SonarQube') {
             steps {
                 script {
-                def scannerHome = tool 'SonarQube';
-                    withSonarQubeEnv('SonarQube') {
-                        sh "ls -la"
+                def scannerHome = tool 'SonarQub';
+                    withSonarQubeEnv('SonarQub') {
+                    sh "ls -la"
                     }
                 }
             }
